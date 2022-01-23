@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Helvetica, sans-serif;
+  background: #f0f2f5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #343a40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+}
+
+.logo > img {
+  width: 40px;
+  margin-top: 5px;
+  filter: brightness(2);
+}
+
+.title {
+  color: #343a40;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 16px;
+  margin-top: 24px;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+main {
+  text-align: center;
+  color: #343a40;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 40px 10px;
+  font-weight: 300;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.box-01 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+  padding: 10px;
+}
+
+.text-01 {
+  color: #343a40;
+  background: #f0f2f5;
+  height: 624px;
+  width: 343px;
+  left: 16px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  border: 0;
+}
+
+.text-warning {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.warning {
+  width: 16px;
+  height: 16px;
+}
+
+.btn-cript {
+  width: 150px;
+  background: #343a40;
+  color: #ced4da;
+  padding: 10px;
+  border: none;
+  border-radius: 99999px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.btn-cript:hover {
+  filter: brightness(0.7);
+}
+
+.btn-descript {
+  width: 150px;
+  color: #343a40;
+  background: #f0f2f5;
+  padding: 10px;
+  border: 1px solid #343a40;
+  border-radius: 99999px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.btn-descript:hover {
+  filter: brightness(0.7);
+}
+
+.box-02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  gap: 5px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.text-02 {
+  color: #343a40;
+  height: 595px;
+  width: 343px;
+  left: 16px;
+  padding: 32px;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  border: 0;
+}
+
+.btn-copy {
+  width: 150px;
+  color: #343a40;
+  background: white;
+  border: 1px solid #343a40;
+  padding: 10px;
+  border-radius: 99999px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: filter 0.3s ease;
+}
+
+.btn-copy:hover {
+  filter: brightness(0.7);
+}
+
+textarea:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.texto-copiado {
+  display: none;
+  color: #343a40;
+}
+
+.view {
+  display: block;
+}

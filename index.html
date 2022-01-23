@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700&family=Poppins:wght@400;600;700&family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>chave mestra</title>
+  </head>
+  <body>
+    <header class="title">
+      <div class="logo">
+        <img src="./assets/Criptografia.svg" alt="logo" />
+      </div>
+
+      <h3>chave mestra</h3>
+    </header>
+    <main>
+      <h1>Crie uma senha secreta</h1>
+      <div class="wrapper">
+        <section class="box-01">
+          <label for="cripto"></label>
+          <textarea
+            class="text-01"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
+            tabindex="0"
+            style="resize: none"
+          ></textarea>
+          <div class="text-warning">
+            <img src="./assets/Vector.svg" alt="aviso" class="warning" />
+            <p>apenas letras minúsculas, sem acento</p>
+          </div>
+
+          <div class="btn">
+            <button class="btn-cript">Criptografar</button>
+            <button class="btn-descript">Descriptografar</button>
+          </div>
+        </section>
+        <section class="box-02">
+          <textarea
+            class="text-02"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
+            tabindex="0"
+            style="resize: none"
+            readonly
+          ></textarea>
+          <button class="btn-copy" onclick="copiarTexto()">Copiar</button>
+          <span class="texto-copiado">texto copiado</span>
+        </section>
+      </div>
+    </main>
+    <script src="./criptografar.js"></script>
+    <script src="./descriptografar.js"></script>
+    <script>
+      function copiarTexto() {
+        let textoCopiado = document.querySelector(".text-02");
+        let textoSpan = document.querySelector(".texto-copiado");
+        textoCopiado.select();
+        textoCopiado.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        textoSpan.classList.add("view");
+      }
+    </script>
+  </body>
+</html>
