@@ -21,9 +21,9 @@ function encriptar(texto) {
     .replace(new RegExp("[ÓÒÔÕ]", "gi"), "o")
     .replace(new RegExp("[ÚÙÛ]", "gi"), "u")
     .replace(new RegExp("[Ç]", "gi"), "c")
-    .replace(/a/g, "ai")
     .replace(/e/g, "enter")
     .replace(/i/g, "imes")
+    .replace(/a/g, "ai")
     .replace(/o/g, "ober")
     .replace(/u/g, "ufat");
   return textoEncriptado;
